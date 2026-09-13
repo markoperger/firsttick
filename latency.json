@@ -1,0 +1,118 @@
+{
+  "_note": "PRIVATE DRAFT. All numbers measured on 2026-09-13. Nothing here is invented; fields that could not be measured are explicitly null with a 'not_measured' reason.",
+  "measured_at_utc": "2026-09-13T14:09:08Z",
+
+  "tipsport_tennis_market_feed": {
+    "bookmaker": "Tipsport.cz",
+    "sport": "Tennis",
+    "markets": [
+      "match winner",
+      "player total aces (over/under)",
+      "match total aces (over/under)",
+      "player total double faults (over/under)",
+      "match total double faults (over/under)",
+      "who hits more aces",
+      "who hits more double faults"
+    ],
+    "delay_price_change_to_available_s": {
+      "median": 3.6,
+      "p95": 6.9,
+      "worst_case_bound": 7.7,
+      "unit": "seconds"
+    },
+    "timing_sample": {
+      "n": 27,
+      "window_utc": ["2026-09-13T14:04:00Z", "2026-09-13T14:08:25Z"],
+      "window_duration_s": 265,
+      "observed_component_read_to_available_ms": {
+        "n": 27, "min": 578, "median": 875, "p95": 1752, "max": 1857
+      },
+      "observed_component_feed_read_duration_ms": {
+        "n": 27, "min": 388, "median": 535, "p95": 797, "max": 835
+      }
+    },
+    "market_change_events_captured": {
+      "n": 5536,
+      "window_utc": ["2026-09-11T19:51:43Z", "2026-09-13T14:07:00Z"],
+      "window_duration_h": 42.25,
+      "gap_between_recorded_market_states_s": {"n": 5536, "min": 1, "median": 25, "p95": 60, "max": 75}
+    },
+    "caveat": "The bookmaker does not publish a server-side timestamp on its own prices. The component from the bookmaker publishing a change to our first read of that change is therefore bounded (<= 5 s), not directly observed; the remainder of the chain is directly measured. Median/p95/worst-case above combine the bounded component with the measured ones."
+  },
+
+  "tipsport_tennis_moneyline_openings": {
+    "bookmaker": "Tipsport.cz",
+    "sport": "Tennis",
+    "markets": ["match winner opening price", "match winner latest/closing price"],
+    "delay_price_change_to_available_s": null,
+    "not_measured": "This feed records an opening and a running latest price per match rather than a timed price tape, so a per-change delay was not measurable in this pass.",
+    "recorded_price_revisions_matches": 12664,
+    "matches_total": 14126,
+    "window_utc": ["2026-06-02T20:18:43Z", "2026-09-13T14:03:03Z"]
+  },
+
+  "czech_multibook_price_tape": {
+    "bookmakers": ["Tipsport.cz", "iFortuna.cz", "Betano.cz"],
+    "sport": "Tennis",
+    "markets": ["match winner (current + opening)"],
+    "gap_between_recorded_price_points_s_last_6h": {
+      "Tipsport.cz": {"n": 9740, "min": 5, "median": 151, "p95": 1433, "max": 3550},
+      "iFortuna.cz": {"n": 9732, "min": 5, "median": 151, "p95": 1433, "max": 3550},
+      "Betano.cz":   {"n": 2265, "min": 74, "median": 165, "p95": 1508, "max": 1572}
+    },
+    "delay_price_change_to_available_s": null,
+    "not_measured": "Only the interval between recorded price points was measured; the publish-to-available delay for this tape was not instrumented."
+  },
+
+  "goldbet_tennis_listing_feed": {
+    "bookmaker": "GoldBet.it",
+    "sport": "Tennis",
+    "scope": "ATP + Challenger, singles and doubles",
+    "markets": ["match winner at first listing"],
+    "delay_listing_to_available_s": null,
+    "not_measured": "This feed stores first-seen timestamps only; no publish-side reference timestamp exists, so a delay figure was not measurable.",
+    "events_total": 6501,
+    "events_last_7d": 341,
+    "events_last_30d": 1535,
+    "window_utc": ["2026-06-25T17:43:21Z", "2026-09-13T13:57:35Z"],
+    "last_heartbeat_utc": "2026-09-13T14:02:45Z"
+  },
+
+  "inbet_tennis_listing_feed": {
+    "bookmaker": "Inbet",
+    "sport": "Tennis",
+    "markets": ["match winner at first listing"],
+    "delay_listing_to_available_s": null,
+    "not_measured": "Same as above: first-seen timestamps only.",
+    "events_total": 6687,
+    "events_last_7d": 474,
+    "events_last_30d": 2002,
+    "window_utc": ["2026-05-31T20:42:06Z", "2026-09-13T14:03:07Z"],
+    "last_heartbeat_utc": "2026-09-13T14:03:07Z"
+  },
+
+  "bet365_tennis_feed": {
+    "bookmaker": "bet365",
+    "sport": "Tennis",
+    "scope_when_last_running": "men's Grand Slam + Challenger, singles and doubles (16 tournament streams)",
+    "status": "BUILT BUT NOT CURRENTLY RUNNING",
+    "last_data_utc": "2026-07-06T22:07:25Z",
+    "matches_captured": 222,
+    "price_updates_received": 9920,
+    "active_window_utc": ["2026-07-06T15:09:43Z", "2026-07-06T22:07:25Z"],
+    "delay_price_change_to_available_s": null,
+    "not_measured": "Feed is dormant; no current timing sample."
+  },
+
+  "bet365_basketball_feed": {
+    "bookmaker": "bet365",
+    "sport": "Basketball",
+    "status": "RUNNING, LISTING-ONLY IN THE SAMPLED WINDOW",
+    "measured_at_utc": "2026-09-13T14:05:35Z",
+    "update_interval_s_observed": {"coupon": 15, "index": 75},
+    "events_tracked": 10,
+    "leagues": ["euroleague"],
+    "priced_rows_in_sample": 0,
+    "caveat": "Events were tracked but carried no prices during the sampled window, so no price-delay figure exists for this feed."
+  }
+}

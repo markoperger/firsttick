@@ -1,0 +1,161 @@
+{
+  "_note": "PRIVATE DRAFT. All counts read directly from live production stores on 2026-09-13T14:09Z. No estimates.",
+  "measured_at_utc": "2026-09-13T14:09:08Z",
+
+  "live_feeds": {
+    "tipsport_tennis_market_feed": {
+      "bookmaker": "Tipsport.cz",
+      "matches_tracked": 272,
+      "matches_by_tier": {"ATP": 194, "WTA": 75, "Challenger-men": 3},
+      "matches_by_gender": {"men": 197, "women": 75},
+      "matches_with_a_priced_player_prop_market": 26,
+      "price_rows": 12751,
+      "price_rows_by_market": {
+        "player total aces": 6465,
+        "match total aces": 5781,
+        "match total double faults": 184,
+        "player total double faults": 174,
+        "who hits more aces": 87,
+        "who hits more double faults": 60
+      },
+      "opening_price_rows": 1026,
+      "distinct_lines_seen": 36,
+      "market_state_snapshots": 5536,
+      "window_utc": ["2026-09-05T13:59:39Z", "2026-09-13T14:02:40Z"],
+      "live_price_rows_window_utc": ["2026-09-11T19:51:43Z", "2026-09-13T13:01:25Z"]
+    },
+
+    "tipsport_tennis_moneyline_openings": {
+      "bookmaker": "Tipsport.cz",
+      "matches": 14126,
+      "matches_with_a_recorded_price_move_after_opening": 12664,
+      "by_tier": {"ITF-men": 5556, "ATP": 5496, "WTA": 2354, "Challenger-men": 686, "unknown": 34},
+      "by_gender": {"men": 11769, "women": 2354, "unknown": 3},
+      "by_type": {"singles": 12123, "doubles": 2000, "unknown": 3},
+      "by_competition_group": {
+        "men singles": 10282, "women singles": 1841, "men doubles": 1487, "women doubles": 513, "mixed": 3
+      },
+      "window_utc": ["2026-06-02T20:18:43Z", "2026-09-13T14:03:03Z"]
+    },
+
+    "czech_multibook_price_tape": {
+      "bookmakers": ["Tipsport.cz", "iFortuna.cz", "Betano.cz"],
+      "price_points_total": 3971522,
+      "price_points_by_bookmaker": {"iFortuna.cz": 1443012, "Tipsport.cz": 1431923, "Betano.cz": 1096587},
+      "price_points_last_24h": 72003,
+      "matches_priced_last_6h": 180,
+      "window_utc": ["2026-07-07T19:56:34Z", "2026-09-13T14:04:11Z"]
+    },
+
+    "goldbet_tennis_listing_feed": {
+      "bookmaker": "GoldBet.it",
+      "scope": "ATP + Challenger, singles and doubles",
+      "events_total": 6501,
+      "events_last_7d": 341,
+      "events_last_30d": 1535,
+      "window_utc": ["2026-06-25T17:43:21Z", "2026-09-13T13:57:35Z"]
+    },
+
+    "inbet_tennis_listing_feed": {
+      "bookmaker": "Inbet",
+      "events_total": 6687,
+      "events_last_7d": 474,
+      "events_last_30d": 2002,
+      "window_utc": ["2026-05-31T20:42:06Z", "2026-09-13T14:03:07Z"]
+    },
+
+    "tipsport_tennis_new_listing_feed": {
+      "bookmaker": "Tipsport.cz",
+      "scope": "men's ATP + Challenger prematch listings",
+      "events_total": 2806,
+      "distinct_listings": 2864,
+      "window_utc": ["2026-07-23T05:51:26Z", "2026-09-13T14:03:03Z"]
+    },
+
+    "bet365_tennis_feed": {
+      "bookmaker": "bet365",
+      "status": "BUILT, NOT CURRENTLY RUNNING",
+      "matches_captured": 222,
+      "price_updates_received": 9920,
+      "tournament_streams": 16,
+      "scope": "men's Grand Slam + Challenger, singles and doubles",
+      "last_data_utc": "2026-07-06T22:07:25Z"
+    },
+
+    "bet365_basketball_feed": {
+      "bookmaker": "bet365",
+      "status": "RUNNING (listing-level in sampled window)",
+      "leagues": ["euroleague"],
+      "events_tracked": 10,
+      "priced_rows_in_sample": 0
+    }
+  },
+
+  "historical_datasets": {
+    "tennis_serve_statistics_2021_2026": {
+      "matches": 86797,
+      "player_match_rows": 173594,
+      "players": 4168,
+      "tournaments": 1552,
+      "fields": ["aces", "double faults", "1st/2nd serve splits", "service points", "per-set breakdown"],
+      "qa_at_86722_matches": {
+        "matches_with_parsed_aces_both_players": 86204,
+        "pct_with_aces": 99.40,
+        "fully_consistent": 78885,
+        "pct_fully_consistent": 90.96,
+        "set_sum_consistency_pct": 99.9959,
+        "service_point_denominator_validation_pct": 99.987
+      },
+      "coverage_by_tier_season_pct_with_stats": {
+        "ATP":   {"2021": 98.89, "2022": 99.71, "2023": 99.65, "2024": 99.57, "2025": 99.55, "2026": 99.49},
+        "CH-M":  {"2021": 95.38, "2022": 99.77, "2023": 99.83, "2024": 99.70, "2025": 99.67, "2026": 99.74},
+        "WTA":   {"2021": 98.77, "2022": 99.50, "2023": 99.57, "2024": 99.67, "2025": 99.56, "2026": 99.62}
+      },
+      "matches_by_tier_season": {
+        "ATP":  {"2021": 3251, "2022": 3469, "2023": 3710, "2024": 3749, "2025": 3552, "2026": 2962},
+        "CH-M": {"2021": 4159, "2022": 7341, "2023": 8248, "2024": 8646, "2025": 8767, "2026": 7233},
+        "WTA":  {"2021": 3084, "2022": 3597, "2023": 3909, "2024": 3966, "2025": 3903, "2026": 3176}
+      },
+      "status_breakdown": {"completed": 83526, "retired": 2715, "walkover": 473, "other": 8}
+    },
+
+    "match_winner_open_close_history_2022_2026": {
+      "matches": 82738,
+      "matches_with_both_opening_and_closing": 80863,
+      "by_bookmaker": {"Tipsport.cz": 80166, "unlabelled": 1875, "iFortuna.cz": 650, "Betano.cz": 47},
+      "by_tier": {"Challenger-men": 40247, "WTA": 16404, "ATP": 15346, "ITF-men": 5211, "ITF-women": 4402, "Challenger-women": 549, "unlabelled": 579},
+      "by_year": {"2021": 2, "2022": 13563, "2023": 15032, "2024": 15546, "2025": 15002, "2026": 23593},
+      "span_utc": ["2021-12-31T23:05:00Z", "2026-09-13T00:20Z"]
+    },
+
+    "settled_player_prop_ladders": {
+      "matches": 32,
+      "ladder_rungs": 1130,
+      "open_close_pairs": 1130,
+      "content": "full ace / double-fault ladder per match with opening price, closing price and the bookmaker's own settlement (winning / losing rung)"
+    },
+
+    "match_results": {
+      "rows": 18089,
+      "fields": ["winner", "score", "retirement flag", "walkover flag", "tournament", "tier", "closing prices"]
+    }
+  },
+
+  "uptime": {
+    "measured_at_utc": "2026-09-13T14:09:08Z",
+    "host_continuous_uptime_days": 107,
+    "host_last_restart_utc": "2026-05-28T15:02:52Z",
+    "host_restarts_last_7d": 0,
+    "feeds": {
+      "tipsport_tennis_market_feed_detector": {"running_since_local": "2026-09-12 16:03:55 CEST", "continuous_run_h": 22.1, "unplanned_restarts_since_start": 0, "process_starts_last_7d": 4},
+      "tipsport_market_capture": {"running_since_local": "2026-09-13 12:39:26 CEST", "continuous_run_h": 3.5, "unplanned_restarts_since_start": 0, "process_starts_last_7d": 10},
+      "tipsport_pricing_layer": {"running_since_local": "2026-09-13 12:39:26 CEST", "continuous_run_h": 3.5, "unplanned_restarts_since_start": 0, "process_starts_last_7d": 21},
+      "tipsport_moneyline_pipeline": {"running_since_local": "2026-09-12 06:38:23 CEST", "continuous_run_h": 33.5, "unplanned_restarts_since_start": 0, "process_starts_last_7d": 1},
+      "goldbet_tennis_feed": {"running_since_local": "2026-09-12 06:38:23 CEST", "continuous_run_h": 33.5, "unplanned_restarts_since_start": 0, "process_starts_last_7d": 1},
+      "inbet_tennis_feed": {"running_since_local": "2026-09-12 06:38:23 CEST", "continuous_run_h": 33.5, "unplanned_restarts_since_start": 0, "process_starts_last_7d": 1},
+      "czech_multibook_tape": {"running_since_local": "2026-09-12 06:38:23 CEST", "continuous_run_h": 33.5, "unplanned_restarts_since_start": 0, "process_starts_last_7d": 1},
+      "bet365_intake": {"running_since_local": "2026-09-12 06:38:23 CEST", "continuous_run_h": 33.5, "unplanned_restarts_since_start": 0, "process_starts_last_7d": 2, "note": "intake process is up; the tennis source feeding it is dormant since 2026-07-06"}
+    },
+    "caveat": "'process_starts_last_7d' counts every start in the journal, deployments included; it is not a failure count. Availability beyond the current continuous run was not reconstructed for the full 7 days."
+  }
+}

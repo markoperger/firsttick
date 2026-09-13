@@ -1,0 +1,21 @@
+match_hash,tier,competition,market_family,subject,line,selection,opening_odds,opening_utc,closing_odds,closing_utc,quote_rows,move_pct
+M-5660fdfdf4,ATP,ATP US Open - tvrdý p.,total_ou,,31.5,over,2.06,2026-09-12T07:56:01Z,3.24,2026-09-13T12:41:49Z,26,57.28
+M-5660fdfdf4,ATP,ATP US Open - tvrdý p.,player_ou,A.Zverev,15.5,over,2.15,2026-09-12T07:56:01Z,3.18,2026-09-13T12:41:49Z,24,47.91
+M-5b5f859280,WTA,WTA US Open - tvrdý p.,player_ou,Rybakina,9.5,over,2.41,2026-09-11T20:25:46Z,2.78,2026-09-12T19:48:40Z,42,15.35
+M-5b5f859280,WTA,WTA US Open - tvrdý p.,total_ou,,14.5,over,1.85,2026-09-11T20:25:46Z,2.22,2026-09-12T19:48:40Z,39,20.0
+M-584546b073,ATP,ATP US Open - tvrdý p.,total_ou,,25.5,over,2.94,2026-09-08T06:16:19Z,2.84,2026-09-08T18:21:49Z,29,-3.4
+M-584546b073,ATP,ATP US Open - tvrdý p.,player_ou,A.Michelsen,15.5,over,2.91,2026-09-08T06:19:26Z,2.78,2026-09-08T18:21:49Z,28,-4.47
+M-1afe63678b,ATP,ATP US Open - tvrdý p.,player_ou,Khachanov,8.5,over,2.54,2026-09-09T08:06:47Z,2.59,2026-09-09T20:49:01Z,28,1.97
+M-1afe63678b,ATP,ATP US Open - tvrdý p.,player_ou,Khachanov,5.5,under,3.07,2026-09-09T08:06:47Z,3.02,2026-09-09T20:49:01Z,27,-1.63
+M-9594086681,ATP,ATP US Open - tvrdý p.,total_ou,,20.5,under,2.73,2026-09-07T10:29:27Z,2.62,2026-09-07T14:36:44Z,14,-4.03
+M-9594086681,ATP,ATP US Open - tvrdý p.,total_ou,,27.5,over,2.68,2026-09-07T10:29:27Z,2.8,2026-09-07T14:10:52Z,12,4.48
+M-d16f154241,ATP,ATP US Open - tvrdý p.,player_ou,B.Shelton,14.5,over,2.56,2026-09-06T10:01:31Z,3.0,2026-09-06T14:37:51Z,13,17.19
+M-d16f154241,ATP,ATP US Open - tvrdý p.,total_ou,,26.5,over,2.45,2026-09-06T10:01:31Z,2.97,2026-09-06T13:43:31Z,13,21.22
+M-aa694cf20b,ATP,ATP US Open - tvrdý p.,player_ou,Tiafoe,8.5,over,2.51,2026-09-10T20:36:13Z,3.19,2026-09-11T13:34:09Z,13,27.09
+M-aa694cf20b,ATP,ATP US Open - tvrdý p.,player_ou,Tiafoe,7.5,over,1.98,2026-09-10T20:36:13Z,2.38,2026-09-11T13:28:02Z,11,20.2
+M-2428aca423,ATP,ATP US Open - tvrdý p.,total_ou,,26.5,over,2.7,2026-09-10T20:55:32Z,3.19,2026-09-11T18:11:56Z,20,18.15
+M-2428aca423,ATP,ATP US Open - tvrdý p.,player_ou,A.Zverev,15.5,over,2.43,2026-09-10T20:55:32Z,2.83,2026-09-11T18:55:34Z,18,16.46
+M-ee3766e9f0,ATP,ATP US Open - tvrdý p.,player_ou,Medvedev,15.5,under,2.86,2026-09-06T09:48:13Z,3.25,2026-09-06T11:37:46Z,11,13.64
+M-ee3766e9f0,ATP,ATP US Open - tvrdý p.,total_ou,,19.5,under,2.91,2026-09-06T09:48:13Z,3.02,2026-09-06T11:37:46Z,10,3.78
+M-29f8d3576d,ATP,ATP US Open - tvrdý p.,player_ou,Blockx,10.5,over,2.29,2026-09-07T09:47:53Z,2.11,2026-09-07T14:20:17Z,11,-7.86
+M-29f8d3576d,ATP,ATP US Open - tvrdý p.,total_ou,,16.5,over,2.31,2026-09-07T09:47:53Z,2.24,2026-09-07T14:20:17Z,11,-3.03
